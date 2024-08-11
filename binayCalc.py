@@ -1,4 +1,11 @@
 def calcBinary(f_bin,s_bin,ch):
+    d_nums = ["2","3","4","5","6","7","8","9"]
+    for x in f_bin:
+        if x in d_nums:
+            return "not binary"
+    for x in s_bin:
+        if x in d_nums:
+            return "not binary"
     if ch == 1:
         f_res=bin_dec(f_bin)+bin_dec(s_bin)
     elif ch == 2:
